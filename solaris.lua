@@ -888,7 +888,7 @@ function SolarisLib:New(Config)
              end 
        end)
 				game:GetService("UserInputService").InputChanged:Connect(function(input) 
-                    if dragging or input.UserInputType == Enum.UserInputType.MouseMovement then 
+                    if dragging then 
                  move(input) 
              end 
       end)
